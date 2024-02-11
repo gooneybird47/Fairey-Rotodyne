@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ <description>rotodyne</description>
+  <author>Brett Harrison</author>
+ <path>Models/rotodyne.ac</path>
+  
+     <animation>
+   		<type>select</type>
+		<object-name>gear</object-name>
+		<condition>
+			<less-than>
+				<property>velocities/true-airspeed-kt</property>
+				<value>100</value>
+			</less-than>
+		</condition>
+	</animation>
+   
+<!--   <animation>
+    <name>leftprop</name>
+    <object-name>prop_left</object-name>
+<object-name>left-blur</object-name>
+    <object-name>left-boss</object-name>
+  </animation>   -->
+  
+<!--  <animation>
+    <type>select</type>
+    <object-name>left-blur</object-name>
+    <condition>
+      <greater-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>50</value>
+      </greater-than>
+    </condition>
+  </animation> -->
+    
+      <animation>
+    <type>select</type>
+    <object-name>prop_left</object-name>
+    <condition>
+      <less-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>600</value>
+      </less-than>
+    </condition>
+  </animation>   
+ 
+      <animation>
+    <type>spin</type>
+    <object-name>prop_left</object-name>
+    <property>velocities/true-airspeed-kt</property>
+    <factor>7</factor>
+    <center>
+      <x-m> -4.6860 </x-m>
+      <y-m> -3.7219 </y-m>
+      <z-m> 2.4209 </z-m>
+    </center>
+    <axis>
+      <x> 1.000 </x>
+      <y>  0.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation> 
+  
+  
+        <animation>
+    <type>select</type>
+    <object-name>prop_right</object-name>
+    <condition>
+      <less-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>600</value>
+      </less-than>
+    </condition>
+  </animation>   
+ 
+      <animation>
+    <type>spin</type>
+    <object-name>prop_right</object-name>
+    <property>velocities/true-airspeed-kt</property>
+    <factor>7</factor>
+    <center>
+      <x-m> -4.6860 </x-m>
+      <y-m> 3.7219 </y-m>
+      <z-m> 2.4209 </z-m>
+    </center>
+    <axis>
+      <x> 1.000 </x>
+      <y>  0.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation> 
+  
+  
+          <animation>
+    <type>select</type>
+    <object-name>rotor</object-name>
+    <condition>
+      <less-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>600</value>
+      </less-than>
+    </condition>
+  </animation>   
+ 
+      <animation>
+    <type>spin</type>
+    <object-name>rotor</object-name>
+    <property>velocities/true-airspeed-kt</property>
+    <factor>7</factor>
+    <center>
+      <x-m> -1.1132 </x-m>
+      <y-m> 0.0000 </y-m>
+      <z-m> 6.3507 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y>  0.000 </y>
+      <z>  1.000 </z>
+    </axis>
+  </animation> 
+  
+  
+   <!-- 
+  <animation>
+    <name>rightprop</name>
+    <object-name>right-prop</object-name>
+    <object-name>right-blur</object-name>
+    <object-name>right-boss</object-name>	
+  </animation>  
+  
+ <animation>
+    <type>select</type>
+    <object-name>right-blur</object-name>
+    <condition>
+      <greater-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>50</value>
+      </greater-than>
+    </condition>
+  </animation>
+    
+      <animation>
+    <type>select</type>
+    <object-name>right-prop</object-name>
+    <condition>
+      <less-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>60</value>
+      </less-than>
+    </condition>
+  </animation>   
+ 
+      <animation>
+    <type>spin</type>
+    <object-name>rightprop</object-name>
+    <property>velocities/true-airspeed-kt</property>
+    <factor>6</factor>
+    <center>
+      <x-m> -4.1630 </x-m>
+      <y-m> 4.1059 </y-m>
+      <z-m> 2.4649 </z-m>
+    </center>
+    <axis>
+      <x> -1.000 </x>
+      <y>  0.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>    -->
+      <!-- ALS Navigation Lights Objects -->
+    <model>
+        <path>Lights/rotodyne-NavLights.xml</path>
+    </model>
+</PropertyList>
